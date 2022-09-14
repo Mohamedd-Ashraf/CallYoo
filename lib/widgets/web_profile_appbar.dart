@@ -40,7 +40,7 @@ class ProfileAppBar extends StatelessWidget {
                 IconButton(
                 onPressed: () {},
                 icon: const Icon(
-                  Icons.search,
+                  Icons.more_vert,
                   color: Colors.grey,
                 ))
           ],

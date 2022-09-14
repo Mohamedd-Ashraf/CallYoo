@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
+import '../widgets/web_chat_abb_bar.dart';
+import '../widgets/web_serach_bar.dart';
+
 class WebScreenLayout extends StatelessWidget {
   const WebScreenLayout({Key? key}) : super(key: key);
 
@@ -19,6 +22,7 @@ class WebScreenLayout extends StatelessWidget {
               // ignore: prefer_const_literals_to_create_immutables
               children:const [
                 ProfileAppBar(),
+                WebSearchBar(),
                  ContactsList(),
               ],
             ),
@@ -32,6 +36,9 @@ class WebScreenLayout extends StatelessWidget {
               image: AssetImage("assets/backgroundImage.png"),
             ),
           ),
+          child: Column(children: [
+            WebChatAppBar()
+          ]),
         )
       ],
     ));
