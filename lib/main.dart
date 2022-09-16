@@ -1,10 +1,17 @@
 import 'package:chat/colors.dart';
+import 'package:chat/features/landing/screens/landing_screen.dart';
+import 'package:chat/firebase_options.dart';
 import 'package:chat/resposive/responsive_layout.dart';
 import 'package:chat/screens/mobile_screen_layout.dart';
 import 'package:chat/screens/web_screen_layout.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async{
+  await WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform
+  );
   runApp(const MyApp());
 }
 
@@ -18,9 +25,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(scaffoldBackgroundColor:backgroundColor),
-      
+      //  const ResponsiveLayout(mobileScreenLayout: MobileScreenLayout(), webScreenLayout: WebScreenLayout())
 
-      home: const ResponsiveLayout(mobileScreenLayout: MobileScreenLayout(), webScreenLayout: WebScreenLayout())
+      home: const LandingScreen()
     );
   }
 }

@@ -53,6 +53,7 @@ class MobileScreenLayout extends StatelessWidget {
           ),
         ),
         body: ContactsList(),
+        floatingActionButton: FloatingActionButton(onPressed: (){} , child: Icon(Icons.comment_outlined , color: Colors.white,) , backgroundColor: tabColor,),
       ),
     );
   }

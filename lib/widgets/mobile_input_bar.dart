@@ -16,7 +16,9 @@ class MobileInputBar extends StatelessWidget {
       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
         Expanded(
           child: Container(
-            padding: const EdgeInsets.only(left:7 , top: 7 , bottom: 7),
+            padding: const EdgeInsets.only(left:7 ,
+            
+             top: 7 , bottom: 7),
     
             height: MediaQuery.of(context).size.height * 0.07,
   

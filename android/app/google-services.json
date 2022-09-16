@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "832180320682",
+    "project_id": "callyoo-2b8ca",
+    "storage_bucket": "callyoo-2b8ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832180320682:android:4a1626d6abd3d5ac0893d3",
+        "android_client_info": {
+          "package_name": "com.example.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832180320682-lodvdtdt9iu3mak05v9ou214td860bis.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJejHqn3ZXGrV7PJPosovD6_BjRfuyFN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832180320682-lodvdtdt9iu3mak05v9ou214td860bis.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "832180320682-iaulkidkj5j7mnh097o7d37ckel0nfli.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.callyoo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
