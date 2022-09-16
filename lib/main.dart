@@ -7,6 +7,8 @@ import 'package:chat/screens/web_screen_layout.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
+import 'features/auth/screens/login.dart';
+
 void main() async{
   await WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -24,10 +26,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor:backgroundColor),
+      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor:backgroundColor , appBarTheme: AppBarTheme(color: appBarColor)),
       //  const ResponsiveLayout(mobileScreenLayout: MobileScreenLayout(), webScreenLayout: WebScreenLayout())
-
-      home: const LandingScreen()
+      
+      home:  LoginScreen()
     );
   }
 }

@@ -46,7 +46,7 @@ class LandingScreen extends StatelessWidget {
                 height: size.height / 50,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 40),
+              padding:  EdgeInsets.symmetric(horizontal: size.width / 9,),
               child: MyButton(
                 text: "Agree and continue",
                 onPressedFunction: () {},
