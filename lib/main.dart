@@ -2,6 +2,7 @@ import 'package:chat/colors.dart';
 import 'package:chat/features/landing/screens/landing_screen.dart';
 import 'package:chat/firebase_options.dart';
 import 'package:chat/resposive/responsive_layout.dart';
+import 'package:chat/routes.dart';
 import 'package:chat/screens/mobile_screen_layout.dart';
 import 'package:chat/screens/web_screen_layout.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -28,8 +29,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(scaffoldBackgroundColor:backgroundColor , appBarTheme: AppBarTheme(color: appBarColor)),
       //  const ResponsiveLayout(mobileScreenLayout: MobileScreenLayout(), webScreenLayout: WebScreenLayout())
-      
-      home:  LoginScreen()
+      onGenerateRoute: (settings) => generateRoute(settings),
+      home:  const LandingScreen()
     );
   }
 }

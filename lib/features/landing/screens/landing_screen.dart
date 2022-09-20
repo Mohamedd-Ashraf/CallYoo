@@ -1,11 +1,15 @@
 import 'package:chat/colors.dart';
 import 'package:chat/common/widgets/myButton.dart';
+import 'package:chat/features/auth/screens/login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({Key? key}) : super(key: key);
+  void navigateToLoginScreen(BuildContext context){
+    Navigator.pushNamed(context, LoginScreen.routeName);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +53,7 @@ class LandingScreen extends StatelessWidget {
               padding:  EdgeInsets.symmetric(horizontal: size.width / 9,),
               child: MyButton(
                 text: "Agree and continue",
-                onPressedFunction: () {},
+                onPressedFunction: () =>navigateToLoginScreen(context),
               ),
             )
           ],
